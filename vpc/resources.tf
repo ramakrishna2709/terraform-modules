@@ -11,7 +11,7 @@ resource "aws_vpc" "customvpc" {
 resource "aws_subnet" "mainsubnet" {
   vpc_id     = aws_vpc.customvpc.id
   cidr_block = "10.0.1.0/24"
-  availability_zone = "us-east-1a"
+  availability_zone = "us-west-1a"
   tags = {
     Name = "PublicSubnet"
   }
